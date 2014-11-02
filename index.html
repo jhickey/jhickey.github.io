@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class=no-js lang=en ng-app=CbApp ng-controller="MainController as main">
+<head>
+    <script type=text/javascript>// IE9 fix
+    if (!window.console) {
+        var console = {
+            log: function () {
+            },
+            warn: function () {
+            },
+            error: function () {
+            },
+            time: function () {
+            },
+            timeEnd: function () {
+            }
+        }
+    }
+    </script>
+    <!--[if lte IE 7]>
+    <script src="/polyfill/json2.js"></script>
+    <![endif]--><!--[if lte IE 8]>
+    <script>
+        document.createElement('ng-include');
+        document.createElement('ng-pluralize');
+        document.createElement('ng-view');
+
+        // Optionally these for CSS
+        document.createElement('ng:include');
+        document.createElement('ng:pluralize');
+        document.createElement('ng:view');
+
+    </script>
+    <![endif]-->
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Cocoded</title>
+    <!-- build:css /prod_css/style.css -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="icon" href="/favicon.ico" type="image/ico">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+    <script>window.Modernizr || document.write('<script src="/bower_components/modernizr/modernizr.js">\x3C/script>')</script>
+</head>
+<body ng-file-drop ng-cloak class="main-bg">
+<cb-navbar></cb-navbar>
+<div ui-view class="row"></div>
+<login-box></login-box>
+<script>window.jQuery || document.write('<script src="/bower_components/jquery/dist/jquery.min.js">\x3C/script>')</script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+<script>window.jQuery.ui || document.write('<script src="/bower_components/jquery-ui/ui/minified/jquery-ui.min.js">\x3C/script>')</script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+<script>window.angular || document.write('<script src="/bower_components/angular/angular.min.js">\x3C/script>')</script>
+
+<!-- build:js /prod_js/app.js -->
+<!-- inject:js -->
+
+
+<script src="/bower_components/es5-shim/es5-shim.js"></script>
+
+
+<script src="/bower_components/fastclick/lib/fastclick.js"></script>
+
+
+<script src="/bower_components/jquery.cookie/jquery.cookie.js"></script>
+
+
+<script src="/bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+
+
+<script src="/bower_components/checklist-model/checklist-model.js"></script>
+
+
+<script src="/bower_components/angular-resource/angular-resource.js"></script>
+
+
+<script src="/bower_components/angular-animate/angular-animate.js"></script>
+
+
+<script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+
+
+<script src="/bower_components/lodash/dist/lodash.compat.js"></script>
+
+
+<script src="/bower_components/ng-context-menu/dist/ng-context-menu.js"></script>
+
+
+<script src="/bower_components/spin.js/spin.js"></script>
+
+
+<script src="/bower_components/angular-ui-utils/ui-utils.js"></script>
+
+
+<script src="/bower_components/angular-markdown-directive/markdown.js"></script>
+
+
+<script src="/bower_components/angular-foundation/mm-foundation-tpls.js"></script>
+
+
+<script src="/bower_components/angular-route/angular-route.js"></script>
+
+
+<script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+
+<script src="/bower_components/angular-inflector/dist/angular-inflector.min.js"></script>
+
+
+<script src="/bower_components/jquery-waypoints/waypoints.js"></script>
+
+
+<script src="/bower_components/SHA-1/sha1.js"></script>
+
+
+<script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+
+
+<script src="/bower_components/angular-file-upload/angular-file-upload.js"></script>
+
+
+<script src="/bower_components/foundation/js/foundation.js"></script>
+
+
+<script src="/bower_components/angular-ui-sortable/sortable.js"></script>
+
+
+<script src="/bower_components/angular-spinner/angular-spinner.js"></script>
+
+
+<script src="/bower_components/angular-autoFields-bootstrap/autofields.min.js"></script>
+
+
+<script src="/bower_components/angular-autoFields-bootstrap/autofields-bootstrap.min.js"></script>
+
+
+<script src="/bower_components/angular-restmod/dist/angular-restmod.min.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-adobe.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-chartbeat.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-flurry.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-ga-cordova.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-ga.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-gtm.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-kissmetrics.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-mixpanel.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-piwik.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-scroll.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-segmentio.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-splunk.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-woopra.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-marketo.js"></script>
+
+
+<script src="/bower_components/angulartics/src/angulartics-intercom.js"></script>
+
+
+<!-- endinject -->
+<script src="/build/js/app.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

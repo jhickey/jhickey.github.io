@@ -1,0 +1,92 @@
+/***CUSTOM APP STYLES ***/
+
+body, h1, h2, h3, h4, h5, h6, label{
+  color: #fff;
+}
+
+
+//Global mixins
+.main-bg{
+  background-color: $secondary-color;
+  background-image: url("/img/logo_transparent.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: inherit;
+  opacity: .9;
+}
+
+
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+  -moz-transition:all .5s ease-in-out;
+  -o-transition:all .5s ease-in-out;
+  transition:all .5s ease-in-out;
+}
+
+[ui-view].ng-enter {
+  opacity: 0;
+  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);
+  transform:scale3d(0.5, 0.5, 0.5);
+}
+
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
+}
+
+[ui-view].ng-leave {
+  opacity: 1;
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
+}
+
+[ui-view].ng-leave-active {
+  opacity: 0;
+  -webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);
+  transform:translate3d(100px, 0, 0);
+}
+
+.fade {
+  $property: opacity 1 0;
+  @include sh--animate($property, 0.2s linear all, true);
+}
+
+.move-from-bottom {
+  $property: top 0% 100%;
+  @include sh--animate($property, 1.0s linear all, true);
+}
+.grow-from-top-small {
+  overflow: hidden;
+  $property: max-height 100px 0px;
+  @include sh--animate($property, 0.5s ease-out all, true);
+}
+
+.grow-from-top-large {
+  overflow: hidden;
+  $property: max-height 500px 0px;
+  @include sh--animate($property, 0.5s ease-out all, true);
+}
+/* Variables */
+$font-stack: Helvetica, sans-serif;
+$color-text: #333;
+$color-primary: #0dbdbb;
+$color-secondary: #f73229;
+$color-tertiary: #ef9f35;
+
+.clear {
+	clear:both;
+}
+
+#topbar-image{
+  height: 100%;
+}
+

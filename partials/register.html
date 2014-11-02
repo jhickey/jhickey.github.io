@@ -1,0 +1,21 @@
+<h2>Register</h2>
+<div ng-show="showRegister" class="grow-from-top-large fade">
+    <form name="registerForm"
+          ng-submit="register(credentials)" novalidate>
+        <label for="email">Email:</label>
+        <input type="text" id="email"
+               ng-model="credentials.email">
+        <label for="email">Username:</label>
+        <input type="text" id="username"
+               ng-model="credentials.username">
+        <label for="password">Password:</label>
+        <input type="password" id="password"
+               ng-model="credentials.password">
+        <button type="submit">Register</button>
+        {{err}}
+    </form>
+</div>
+<div ng-show="!showRegister" class="grow-from-top-small">
+    <h2>Thanks for registering!</h2>
+</div>
+

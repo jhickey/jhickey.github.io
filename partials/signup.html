@@ -1,0 +1,17 @@
+<h2>Sign up</h2>
+<div ng-show="showSignup" class="grow-from-top-large fade">
+    <form name="registerForm"
+          ng-submit="register(signupdata)" novalidate>
+        <label for="signup-email">Email:</label>
+        <input type="text" id="signup-email"
+               ng-model="signupdata.email">
+        <label for="signup-dev">I'm a developer</label>
+        <input type="checkbox" id="signup-dev"
+               ng-model="signupdata.developer">
+        <button type="submit">Signup</button>
+        {{err}}
+    </form>
+</div>
+<div ng-show="!showSignup" class="grow-from-top-small">
+    <h2>Thanks for your interest, you'll hear from us soon!</h2>
+</div>
